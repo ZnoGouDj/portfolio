@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    padding: 3rem;
+    background: linear-gradient(to right, rgba(43, 78, 114, 1), rgba(43, 78, 114, 0.9));
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.my-photo {
+    float: left;
+    padding-right: 1rem;
+}
+
+h1 {
+    font-family: "Open Sans Extrabold", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+}
+
+.education, .projects {
+    border-top: 3px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+p:last-child {
+    margin-bottom: 20px;
+}
+
+h3 {
+    background-color: #eee;
+    color: #444;
+    padding: 18px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.slider{
+    max-width: 100%;
+    position: relative;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider .item img {
+    object-fit: cover;
+    width: 70%;
+    height: 400px;
+    float: right;
+}
+
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

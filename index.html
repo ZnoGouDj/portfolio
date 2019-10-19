@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="index.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="my-photo">
+            <img src="img/photo.jpg" alt="Photo" width=260px height=150px>
+        </div>
+        <h1>Egor Sorokin</h1>
+        <p><a href="https://www.facebook.com/profile.php?id=100010850085688" target="_blank">Facebook link</a></p>
+        <p><a href="https://t.me/znogoud" target="_blank">Telegram link</a></p>
+    </header>
+    <div class="clear"></div>
+    <div class="education">
+        <button type="button" class="collapsible">Education</button>
+        <div class="content">
+            <h3>Polytechnic Gymnasium №6</h3>
+            <p>2002 - 2012</p>
+            <h3>Belarusian State Technological University</h3>
+            <p>2012 - 2017</p>
+            <h3>RS School courses</h3>
+            <p>2019 - 2020</p>
+        </div>
+    </div>
+    <div class="projects">
+        <h3>Projects</h3>
+        <div class="slider">
+            <div class="item">
+                <img src="img/theyalow.png" alt="theyalow">
+                <div class="slideText"></div>
+            </div>
+
+            <div class="item">
+                <img src="img/portfolio.png" alt="porfolio">
+                <div class="slideText"></div>
+            </div>
+
+            <div class="item">
+                <img src="img/repair-design-project.png" alt="repair-design-project">
+                <div class="slideText"></div>
+            </div>
+
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
